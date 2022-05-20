@@ -46,8 +46,23 @@
             width: 172.25px;
             length: 136.5px;
         }
+        
+        .body {
+        overflow-y: scroll; /* Add the ability to scroll */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .body::-webkit-scrollbar {
+        display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        }
     </style>
-    <body id="page-top">
+    <body id="page-top" class="body">
         overflow: hidden; /* Hide scrollbars */
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
