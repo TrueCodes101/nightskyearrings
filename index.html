@@ -231,11 +231,12 @@
                 </center>
               </div>
         </section>
-        <a class="btn btn-primary btn-xl text-uppercase" onclick="infoButton()">Info!</a>
+        <a class="btn btn-primary btn-xl text-uppercase" onclick="infoButton()">Info!
 
             <div id="infoButton">
                 This is my DIV element.
             </div>
+        </a>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -473,10 +474,10 @@
         <script>
             function infoButton() {
             var x = document.getElementById("infoButton");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
                 }
             }
         </script>
